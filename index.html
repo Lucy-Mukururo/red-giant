@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Giant Media Agency | Experiential Marketing & Audio-Visual Production</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts (Poppins & Syne) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" onclick="navigateTo('home')">
+        <i class="fa-solid fa-compact-disc text-danger me-2 fa-spin-pulse"></i>
+        RED <span>GIANT</span>
+      </a>
+      
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="fa-solid fa-bars-staggered text-light fs-3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" id="nav-home" onclick="navigateTo('home')">Home</a></li>
+          <li class="nav-item"><a class="nav-link" id="nav-about" onclick="navigateTo('about')">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" id="nav-services" onclick="navigateTo('services')">Services</a></li>
+          <li class="nav-item"><a class="nav-link" id="nav-portfolio" onclick="navigateTo('portfolio')">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" id="nav-clients" onclick="navigateTo('clients')">Brand Clients</a></li>
+          <li class="nav-item"><a class="nav-link" id="nav-contact" onclick="navigateTo('contact')">Contact</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <button class="btn btn-red btn-sm px-4" onclick="navigateTo('contact')">Get a Proposal</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 1: HOME / LANDING PAGE -->
+  <!-- ========================================================================= -->
+  <section id="page-home" class="page-content active">
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="hero-glow"></div>
+      <div class="container py-5">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7">
+            <span class="brand-badge mb-3 d-inline-block">Kenya's Premier Experiential Agency</span>
+            <h1 class="display-3 fw-bold mb-3">We Build <span class="text-danger">Disruptive</span> Brand Experiences.</h1>
+            <p class="lead text-secondary mb-4 pe-lg-4">
+              From high-octane experiential events and broadcast productions to commercial campaigns for global and local giants.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <button class="btn btn-red btn-lg" onclick="navigateTo('portfolio')">
+                Explore Our Work <i class="fa-solid fa-arrow-right ms-2 fs-6"></i>
+              </button>
+              <button class="btn btn-outline-red btn-lg" onclick="navigateTo('vault')">
+                <i class="fa-solid fa-play me-2"></i> Watch 2026 Reel
+              </button>
+            </div>
+          </div>
+          
+          <div class="col-lg-5">
+           
+<!-- Trusted Brands Carousel -->
+
+<section class="brands-section py-5">
+
+<div class="container">
+
+<h2 class="text-center text-white mb-5">
+Trusted Brands & Partners
+</h2>
+
+
+<div id="brandCarousel" 
+class="carousel slide"
+data-bs-ride="carousel">
+
+
+<div class="carousel-inner">
+
+
+
+<!-- Netflix -->
+
+<div class="carousel-item active">
+
+
+<div class="brand-card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+alt="Netflix Logo">
+
+
+<h4>
+Netflix
+</h4>
+
+
+<p>
+Entertainment & Streaming Platform
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- Citizen TV -->
+
+<div class="carousel-item">
+
+
+<div class="brand-card">
+
+
+<img src="images/citizen.jpg"
+alt="Citizen TV Logo">
+
+
+<h4>
+Citizen TV
+</h4>
+
+
+<p>
+Kenya's Leading Television Network
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- BIC -->
+
+
+<div class="carousel-item">
+
+
+<div class="brand-card">
+
+
+<img src="images/bic pen.jpg"
+alt="BIC Pens Logo">
+
+
+<h4>
+BIC Pens
+</h4>
+
+
+<p>
+Writing Instruments & Innovation
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- Serena Hotels -->
+
+
+<div class="carousel-item">
+
+
+<div class="brand-card">
+
+
+<img src="images/serena hotel.jpg"
+alt="Serena Hotels">
+
+
+<h4>
+Serena Hotels
+</h4>
+
+
+<p>
+Luxury Hospitality Experience
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- Showmax -->
+
+
+<div class="carousel-item">
+
+
+<div class="brand-card">
+
+
+<img src="images/showmax.jpg"
+alt="Showmax Logo">
+
+
+<h4>
+Showmax
+</h4>
+
+
+<p>
+Streaming Entertainment Service
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Tech Laptop -->
+
+
+<div class="carousel-item">
+
+
+<div class="brand-card">
+
+
+<img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800"
+alt="Technology Laptop">
+
+
+<h4>
+Tech Laptops
+</h4>
+
+
+<p>
+Modern Computing Solutions
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<!-- Controls -->
+
+
+<button class="carousel-control-prev"
+type="button"
+data-bs-target="#brandCarousel"
+data-bs-slide="prev">
+
+
+<span class="carousel-control-prev-icon"></span>
+
+</button>
+
+
+
+<button class="carousel-control-next"
+type="button"
+data-bs-target="#brandCarousel"
+data-bs-slide="next">
+
+
+<span class="carousel-control-next-icon"></span>
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+             
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Client Ticker -->
+    <div class="py-4 border-bottom border-top border-dark bg-black">
+      <div class="container text-center">
+        <p class="text-uppercase small text-secondary fw-semibold mb-3">Trusted by World-Class Brands</p>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3 align-items-center">
+          <div class="col"><div class="brand-logo-card"><strong class="fs-5 text-light"><i class="fa-solid fa-play text-danger me-1"></i> NETFLIX</strong></div></div>
+          <div class="col"><div class="brand-logo-card"><strong class="fs-5 text-light"><i class="fa-solid fa-tv text-warning me-1"></i> CITIZEN TV</strong></div></div>
+          <div class="col"><div class="brand-logo-card"><strong class="fs-5 text-light"><i class="fa-solid fa-film text-info me-1"></i> SHOWMAX</strong></div></div>
+          <div class="col"><div class="brand-logo-card"><strong class="fs-5 text-light"><i class="fa-solid fa-pen text-danger me-1"></i> BIC PENS</strong></div></div>
+          <div class="col"><div class="brand-logo-card"><strong class="fs-5 text-light"><i class="fa-solid fa-hotel text-warning me-1"></i> SERENA HOTELS</strong></div></div>
+          <div class="col"><div class="brand-logo-card"><strong class="fs-5 text-light"><i class="fa-solid fa-laptop text-primary me-1"></i> TECH LAPTOPS</strong></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats & Highlight -->
+    <div class="container py-5">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3">
+          <div class="custom-card">
+            <div class="stat-number">500+</div>
+            <div class="text-secondary small">Events Executed</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="custom-card">
+            <div class="stat-number">12M+</div>
+            <div class="text-secondary small">Audience Engagement</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="custom-card">
+            <div class="stat-number">15+</div>
+            <div class="text-secondary small">Industry Awards</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="custom-card">
+            <div class="stat-number">100%</div>
+            <div class="text-secondary small">Client Satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 2: ABOUT US -->
+  <!-- ========================================================================= -->
+  <section id="page-about" class="page-content container py-5">
+    <div class="row mb-5 align-items-center">
+      <div class="col-lg-6">
+        <span class="brand-badge mb-2">Our Identity</span>
+        <h2 class="display-5 fw-bold mb-3">Redefining Media & Experiential Marketing</h2>
+        <p class="text-secondary">
+          Red Giant Media Agency is Nairobi's premier full-service experiential, audio-visual, and brand engagement powerhouse. Founded on raw creativity and technical perfection, we bring corporate visions to life through memorable events, award-winning video production, and high-conversion activations.
+        </p>
+        <p class="text-secondary">
+          We pride ourselves on culture-centric storytelling, cutting-edge gear, and an unmatched execution record across East Africa and beyond.
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <div class="card-img-wrapper shadow-lg">
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop" alt="Red Giant Team Strategy Session">
+        </div>
+      </div>
+    </div>
+
+    <!-- Leadership Team -->
+    <div class="mb-5">
+      <h3 class="fw-bold mb-4 text-center">Creative Leadership</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="custom-card text-center">
+            <div class="card-img-wrapper mb-3" style="aspect-ratio:1/1;">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" alt="Creative Director">
+            </div>
+            <h5 class="fw-bold mb-1">Amina Ochieng</h5>
+            <p class="text-danger small mb-2">Managing & Creative Director</p>
+            <p class="text-secondary small">12+ years in experiential activations and major media strategy across Africa.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="custom-card text-center">
+            <div class="card-img-wrapper mb-3" style="aspect-ratio:1/1;">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" alt="Head of Production">
+            </div>
+            <h5 class="fw-bold mb-1">Kwame Mensah</h5>
+            <p class="text-danger small mb-2">Head of Audio-Visual Production</p>
+            <p class="text-secondary small">Award-winning Director of Photography specializing in commercials and TV series.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="custom-card text-center">
+            <div class="card-img-wrapper mb-3" style="aspect-ratio:1/1;">
+              <img src="https://images.unsplash.com/photo-1580894732413-a70d2a80cf3b?q=80&w=800&auto=format&fit=crop" alt="Events Operations Lead">
+            </div>
+            <h5 class="fw-bold mb-1">Zuri Kamau</h5>
+            <p class="text-danger small mb-2">Experiential & Events Operations Lead</p>
+            <p class="text-secondary small">Mastermind behind large-scale stadium expos and high-profile luxury brand galas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 3: SERVICES -->
+  <!-- ========================================================================= -->
+  <section id="page-services" class="page-content container py-5">
+    <div class="text-center mb-5">
+      <span class="brand-badge mb-2">What We Do Best</span>
+      <h2 class="display-5 fw-bold">Our Core Capabilities</h2>
+      <p class="text-secondary max-w-600 mx-auto">End-to-end media and marketing solutions tailored for high-stakes brand growth.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="custom-card">
+          <div class="text-danger fs-1 mb-3"><i class="fa-solid fa-bullhorn"></i></div>
+          <h4 class="fw-bold mb-3">Experiential Marketing</h4>
+          <p class="text-secondary small">Roadshows, mall pop-ups, bar activations, and disruptive street campaigns that create instant brand lovers.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="custom-card">
+          <div class="text-danger fs-1 mb-3"><i class="fa-solid fa-video"></i></div>
+          <h4 class="fw-bold mb-3">Film & TV Production</h4>
+          <p class="text-secondary small">Full RED 8K camera workflow, aerial drone filming, documentaries, and high-impact TV commercials.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="custom-card">
+          <div class="text-danger fs-1 mb-3"><i class="fa-solid fa-calendar-star"></i></div>
+          <h4 class="fw-bold mb-3">Corporate Events & Expos</h4>
+          <p class="text-secondary small">End-to-end planning, stage design, audiovisual engineering, lighting, and VIP management for summits.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="custom-card">
+          <div class="text-danger fs-1 mb-3"><i class="fa-solid fa-laptop-code"></i></div>
+          <h4 class="fw-bold mb-3">Tech & Hardware Product Launches</h4>
+          <p class="text-secondary small">Keynotes, interactive tech booths, live streaming setup, and demo stations for laptop & consumer electronics brands.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="custom-card">
+          <div class="text-danger fs-1 mb-3"><i class="fa-solid fa-hotel"></i></div>
+          <h4 class="fw-bold mb-3">Hospitality & Tourism Content</h4>
+          <p class="text-secondary small">Cinematic hotel walkthroughs, gourmet culinary video shoots, and lifestyle photography for resort brands.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="custom-card">
+          <div class="text-danger fs-1 mb-3"><i class="fa-solid fa-microphone-lines"></i></div>
+          <h4 class="fw-bold mb-3">Sound & Podcast Studio</h4>
+          <p class="text-secondary small">Acoustically tuned sound stages for podcasts, voiceovers, radio jingles, and broadcast audio mixing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 4: PORTFOLIO & CASE STUDIES -->
+  <!-- ========================================================================= -->
+  <section id="page-portfolio" class="page-content container py-5">
+    <div class="text-center mb-5">
+      <span class="brand-badge mb-2">Our Work</span>
+      <h2 class="display-5 fw-bold">Featured Case Studies</h2>
+      <p class="text-secondary">Selected campaigns produced for market leaders.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="custom-card">
+          <div class="card-img-wrapper mb-3">
+            <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?q=80&w=800&auto=format&fit=crop" alt="Netflix African Original Launch">
+          </div>
+          <span class="brand-badge mb-2 d-inline-block">Netflix</span>
+          <h5 class="fw-bold">African Original Premiere</h5>
+          <p class="text-secondary small">Red carpet execution, talent interviews, and experiential fan zone setup in Nairobi.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="custom-card">
+          <div class="card-img-wrapper mb-3">
+            <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=800&auto=format&fit=crop" alt="Citizen TV Studio Design">
+          </div>
+          <span class="brand-badge mb-2 d-inline-block">Citizen TV</span>
+          <h5 class="fw-bold">Prime Time Broadcast Production</h5>
+          <p class="text-secondary small">Special election coverage AV production setup and lighting design.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="custom-card">
+          <div class="card-img-wrapper mb-3">
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop" alt="Showmax Drama Series">
+          </div>
+          <span class="brand-badge mb-2 d-inline-block">Showmax</span>
+          <h5 class="fw-bold">Drama Series Commercial Trailer</h5>
+          <p class="text-secondary small">End-to-end filming, sound design, and color grading for streaming launch campaign.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="custom-card">
+          <div class="card-img-wrapper mb-3">
+            <img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?q=80&w=800&auto=format&fit=crop" alt="BIC Biro Campus Activation">
+          </div>
+          <span class="brand-badge mb-2 d-inline-block">BIC Biro Pens</span>
+          <h5 class="fw-bold">National Campus Tour Activation</h5>
+          <p class="text-secondary small">Interactive art contest and experiential roadshow across 15 university campuses.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="custom-card">
+          <div class="card-img-wrapper mb-3">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&auto=format&fit=crop" alt="Grand Hotel Launch">
+          </div>
+          <span class="brand-badge mb-2 d-inline-block">Serena & Luxury Hotels</span>
+          <h5 class="fw-bold">Resort & Culinary Showcase</h5>
+          <p class="text-secondary small">High-end video commercial and VR hotel walk-through for international tour guests.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="custom-card">
+          <div class="card-img-wrapper mb-3">
+            <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=800&auto=format&fit=crop" alt="Laptop Brand Launch">
+          </div>
+          <span class="brand-badge mb-2 d-inline-block">Pro Laptop Series</span>
+          <h5 class="fw-bold">Next-Gen Laptop Launch Expo</h5>
+          <p class="text-secondary small">Product unveiling keynote, creator interactive station, and influencer media campaign.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 5: BRAND CLIENTS & PARTNERSHIPS -->
+  <!-- ========================================================================= -->
+  <section id="page-clients" class="page-content container py-5">
+    <div class="text-center mb-5">
+      <span class="brand-badge mb-2">Our Network</span>
+      <h2 class="display-5 fw-bold">Brand Partners & Clients</h2>
+      <p class="text-secondary">We collaborate with global streaming giants, top broadcasters, consumer goods, tech, and luxury brands.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Netflix -->
+      <div class="col-md-6">
+        <div class="custom-card d-flex align-items-center gap-4">
+          <div class="text-danger fs-1"><i class="fa-solid fa-play"></i></div>
+          <div>
+            <h4 class="fw-bold mb-1">Netflix Africa</h4>
+            <p class="text-danger small mb-2">Entertainment & Streaming</p>
+            <p class="text-secondary small m-0">Experiential premiere events, cast junkets, and outdoor promotional installations.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Citizen TV -->
+      <div class="col-md-6">
+        <div class="custom-card d-flex align-items-center gap-4">
+          <div class="text-warning fs-1"><i class="fa-solid fa-tv"></i></div>
+          <div>
+            <h4 class="fw-bold mb-1">Citizen TV</h4>
+            <p class="text-warning small mb-2">National Broadcasting</p>
+            <p class="text-secondary small m-0">Joint television commercial production, live stage rigs, and media co-sponsorships.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Showmax -->
+      <div class="col-md-6">
+        <div class="custom-card d-flex align-items-center gap-4">
+          <div class="text-info fs-1"><i class="fa-solid fa-film"></i></div>
+          <div>
+            <h4 class="fw-bold mb-1">Showmax</h4>
+            <p class="text-info small mb-2">Video On Demand</p>
+            <p class="text-secondary small m-0">Original series marketing campaigns, pop-up cinema activations, and digital teasers.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BIC Biro Pens -->
+      <div class="col-md-6">
+        <div class="custom-card d-flex align-items-center gap-4">
+          <div class="text-danger fs-1"><i class="fa-solid fa-pen-nib"></i></div>
+          <div>
+            <h4 class="fw-bold mb-1">BIC Biro Pens</h4>
+            <p class="text-danger small mb-2">FMCG & Stationery</p>
+            <p class="text-secondary small m-0">Nationwide roadshows, back-to-school consumer activations, and retail store displays.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Luxury Hotels -->
+      <div class="col-md-6">
+        <div class="custom-card d-flex align-items-center gap-4">
+          <div class="text-warning fs-1"><i class="fa-solid fa-hotel"></i></div>
+          <div>
+            <h4 class="fw-bold mb-1">Serena & Luxury Hotel Group</h4>
+            <p class="text-warning small mb-2">Hospitality & Tourism</p>
+            <p class="text-secondary small m-0">Commercial video production, drone resort photography, and annual gala management.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laptop & Tech Retailer -->
+      <div class="col-md-6">
+        <div class="custom-card d-flex align-items-center gap-4">
+          <div class="text-primary fs-1"><i class="fa-solid fa-laptop"></i></div>
+          <div>
+            <h4 class="fw-bold mb-1">Apex Tech & Laptop Corp</h4>
+            <p class="text-primary small mb-2">Consumer Electronics</p>
+            <p class="text-secondary small m-0">Hardware launch expos, creator video reviews, and e-sports arena event production.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 7: CONTACT US -->
+  <!-- ========================================================================= -->
+  <section id="page-contact" class="page-content container py-5">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <span class="brand-badge mb-2">Get In Touch</span>
+        <h2 class="display-5 fw-bold mb-4">Let's Create Something Extraordinary</h2>
+        <p class="text-secondary mb-4">
+          Ready to elevate your brand event, launch a nation-wide activation, or film your next commercial? Reach out to our expert production team.
+        </p>
+
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <div class="text-danger fs-4"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <h6 class="fw-bold m-0">Headquarters</h6>
+            <small class="text-secondary">FCB Mihrab Tower, Kilimani, Nairobi, Kenya</small>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <div class="text-danger fs-4"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <h6 class="fw-bold m-0">Direct Line</h6>
+            <small class="text-secondary">+254 742157509</small>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <div class="text-danger fs-4"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <h6 class="fw-bold m-0">Email Inquiry</h6>
+            <small class="text-secondary">hey@redgiant.co.ke</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="custom-card">
+          <h4 class="fw-bold mb-4"><i class="fa-solid fa-paper-plane text-danger me-2"></i> Request a Proposal</h4>
+          <form id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label small text-secondary">Your Name</label>
+                <input type="text" class="form-control bg-dark text-white border-secondary" required placeholder="e.g. Sarah Kimani">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small text-secondary">Email Address</label>
+                <input type="email" class="form-control bg-dark text-white border-secondary" required placeholder="sarah@company.com">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small text-secondary">Company / Brand</label>
+                <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="e.g. Netflix / BIC / Hotel Group">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small text-secondary">Service Required</label>
+                <select class="form-select bg-dark text-white border-secondary">
+                  <option selected>Experiential Marketing</option>
+                  <option>Film & Commercial Production</option>
+                  <option>Event Management & Expo</option>
+                  <option>Hardware/Laptop Launch</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label small text-secondary">Project Details</label>
+                <textarea class="form-control bg-dark text-white border-secondary" rows="4" required placeholder="Tell us about your event vision, dates, and budget goals..."></textarea>
+              </div>
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn btn-red w-100 py-3">Submit Inquiry</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO MODAL PLAYER -->
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-black border border-secondary">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="ratio ratio-16x9">
+            <iframe id="videoIframe" src="" allowfullscreen allow="autoplay"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="py-4 mt-5">
+    <div class="container text-center">
+      <p class="m-0 small text-secondary">
+        &copy; 2026 Red Giant Media Agency. All rights reserved. | Nairobi, Kenya
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- SPA Navigation & Video Script -->
+  <script>
+    // Navigation controller for 7 pages
+    function navigateTo(pageId) {
+      // Hide all pages
+      document.querySelectorAll('.page-content').forEach(el => el.classList.remove('active'));
+      // Deactivate all nav items
+      document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));
+      
+      // Show selected page
+      const targetPage = document.getElementById(`page-${pageId}`);
+      if (targetPage) {
+        targetPage.classList.add('active');
+      }
+
+      // Highlight corresponding navbar tab
+      const targetNav = document.getElementById(`nav-${pageId}`);
+      if (targetNav) {
+        targetNav.classList.add('active');
+      }
+
+      // Smooth scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // Close mobile collapsed navbar
+      const navCollapse = document.getElementById('navMenu');
+      if (navCollapse && navCollapse.classList.contains('show')) {
+        const bsCollapse = new bootstrap.Collapse(navCollapse);
+        bsCollapse.hide();
+      }
+    }
+
+    // Video Modal Handler
+    function openVideoModal(videoUrl) {
+      const modal = new bootstrap.Modal(document.getElementById('videoModal'));
+      document.getElementById('videoIframe').src = videoUrl;
+      modal.show();
+
+      // Reset iframe source on modal close
+      document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
+        document.getElementById('videoIframe').src = '';
+      });
+    }
+
+    // Form submission handler
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      alert('Thank you for contacting Red Giant Media Agency! Our team will reach out within 2 hours.');
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>
