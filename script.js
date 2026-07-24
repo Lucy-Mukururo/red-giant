@@ -18,3 +18,23 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 400);
   }, 2800);
 });
+
+// Portfolio category filter
+document.addEventListener('DOMContentLoaded', function () {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const portfolioItems = document.querySelectorAll('.portfolio-item');
+  if (!filterButtons.length || !portfolioItems.length) return;
+
+  filterButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      filterButtons.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+      portfolioItems.forEach(function (item) {
+        const match = filter === 'all' || item.dataset.category === filter;
+        item.classList.toggle('is-hidden', !match);
+      });
+    });
+  });
+});

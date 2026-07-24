@@ -35,6 +35,7 @@
           <li class="nav-item"><a class="nav-link" id="nav-services" onclick="navigateTo('services')">Services</a></li>
           <li class="nav-item"><a class="nav-link" id="nav-portfolio" onclick="navigateTo('portfolio')">Portfolio</a></li>
           <li class="nav-item"><a class="nav-link" id="nav-clients" onclick="navigateTo('clients')">Brand Clients</a></li>
+          <li class="nav-item"><a class="nav-link" id="nav-events" href="events.html">Events</a></li>
           <li class="nav-item"><a class="nav-link" id="nav-contact" onclick="navigateTo('contact')">Contact</a></li>
           <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
             <button class="btn btn-red btn-sm px-4" onclick="navigateTo('contact')">Get a Proposal</button>
@@ -96,7 +97,17 @@
     <section class="brands-section py-5">
       <div class="container">
         <h2 class="text-center text-white mb-5">Trusted Brands & Partners</h2>
-        <div id="brandCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="brandCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Netflix"></button>
+            <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="1" aria-label="Citizen TV"></button>
+            <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="2" aria-label="BIC Pens"></button>
+            <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="3" aria-label="Serena Hotels"></button>
+            <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="4" aria-label="Showmax"></button>
+            <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="5" aria-label="Tech Laptops"></button>
+            <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="6" aria-label="Java House"></button>
+            <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="7" aria-label="Safaricom"></button>
+          </div>
           <div class="carousel-inner">
 
             <!-- Netflix -->
@@ -153,6 +164,24 @@
               </div>
             </div>
 
+            <!-- Java House -->
+            <div class="carousel-item">
+              <div class="brand-card">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800" alt="Java House">
+                <h4>Java House</h4>
+                <p>Coffee & Casual Dining Chain</p>
+              </div>
+            </div>
+
+            <!-- Safaricom -->
+            <div class="carousel-item">
+              <div class="brand-card">
+                <img src="https://images.unsplash.com/photo-1516387938699-a93567ec168e?w=800" alt="Safaricom">
+                <h4>Safaricom</h4>
+                <p>Telecommunications & Mobile Money</p>
+              </div>
+            </div>
+
           </div>
 
           <!-- Controls -->
@@ -170,13 +199,15 @@
     <div class="py-4 border-bottom border-top border-dark bg-black">
       <div class="container text-center">
         <p class="text-uppercase small text-secondary fw-semibold mb-3">Trusted by World-Class Brands</p>
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3 align-items-center">
+        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4 g-3 align-items-center">
           <div class="col"><div class="brand-logo-card"><strong class="fs-5 text-light"><i class="fa-solid fa-play text-danger me-1"></i> NETFLIX</strong></div></div>
           <div class="col"><div class="brand-logo-card"><strong class="fs-5 text-light"><i class="fa-solid fa-tv text-warning me-1"></i> CITIZEN TV</strong></div></div>
           <div class="col"><div class="brand-logo-card"><strong class="fs-5 text-light"><i class="fa-solid fa-film text-info me-1"></i> SHOWMAX</strong></div></div>
           <div class="col"><div class="brand-logo-card"><strong class="fs-5 text-light"><i class="fa-solid fa-pen text-danger me-1"></i> BIC PENS</strong></div></div>
           <div class="col"><div class="brand-logo-card"><strong class="fs-5 text-light"><i class="fa-solid fa-hotel text-warning me-1"></i> SERENA HOTELS</strong></div></div>
           <div class="col"><div class="brand-logo-card"><strong class="fs-5 text-light"><i class="fa-solid fa-laptop text-primary me-1"></i> TECH LAPTOPS</strong></div></div>
+          <div class="col"><div class="brand-logo-card"><strong class="fs-5 text-light"><i class="fa-solid fa-mug-hot text-warning me-1"></i> JAVA HOUSE</strong></div></div>
+          <div class="col"><div class="brand-logo-card"><strong class="fs-5 text-light"><i class="fa-solid fa-signal text-success me-1"></i> SAFARICOM</strong></div></div>
         </div>
       </div>
     </div>
@@ -284,45 +315,57 @@
 
     <div class="row g-4">
       <div class="col-md-6 col-lg-4">
-        <div class="custom-card">
-          <div class="text-danger fs-1 mb-3"><i class="fa-solid fa-bullhorn"></i></div>
+        <div class="service-card">
+          <span class="service-index">01</span>
+          <div class="service-icon-badge"><i class="fa-solid fa-bullhorn"></i></div>
+          <span class="service-tag">Brand Activation</span>
           <h4 class="fw-bold mb-3">Experiential Marketing</h4>
-          <p class="text-secondary small">Roadshows, mall pop-ups, bar activations, and disruptive street campaigns that create instant brand lovers.</p>
+          <p class="text-secondary small mb-0">Roadshows, mall pop-ups, bar activations, and disruptive street campaigns engineered to turn passersby into instant brand lovers.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
-        <div class="custom-card">
-          <div class="text-danger fs-1 mb-3"><i class="fa-solid fa-video"></i></div>
+        <div class="service-card">
+          <span class="service-index">02</span>
+          <div class="service-icon-badge"><i class="fa-solid fa-video"></i></div>
+          <span class="service-tag">Production</span>
           <h4 class="fw-bold mb-3">Film & TV Production</h4>
-          <p class="text-secondary small">Full RED 8K camera workflow, aerial drone filming, documentaries, and high-impact TV commercials.</p>
+          <p class="text-secondary small mb-0">Full RED 8K camera workflow, aerial drone filming, documentaries, and high-impact television commercials shot to broadcast standard.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
-        <div class="custom-card">
-          <div class="text-danger fs-1 mb-3"><i class="fa-solid fa-calendar-star"></i></div>
+        <div class="service-card">
+          <span class="service-index">03</span>
+          <div class="service-icon-badge"><i class="fa-solid fa-calendar-star"></i></div>
+          <span class="service-tag">Live Events</span>
           <h4 class="fw-bold mb-3">Corporate Events & Expos</h4>
-          <p class="text-secondary small">End-to-end planning, stage design, audiovisual engineering, lighting, and VIP management for summits.</p>
+          <p class="text-secondary small mb-0">End-to-end planning, stage design, audiovisual engineering, lighting, and VIP management for summits and conferences.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
-        <div class="custom-card">
-          <div class="text-danger fs-1 mb-3"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="service-card">
+          <span class="service-index">04</span>
+          <div class="service-icon-badge"><i class="fa-solid fa-laptop-code"></i></div>
+          <span class="service-tag">Product Launch</span>
           <h4 class="fw-bold mb-3">Tech & Hardware Product Launches</h4>
-          <p class="text-secondary small">Keynotes, interactive tech booths, live streaming setup, and demo stations for laptop & consumer electronics brands.</p>
+          <p class="text-secondary small mb-0">Keynotes, interactive tech booths, live streaming setup, and hands-on demo stations for laptop and consumer electronics brands.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
-        <div class="custom-card">
-          <div class="text-danger fs-1 mb-3"><i class="fa-solid fa-hotel"></i></div>
+        <div class="service-card">
+          <span class="service-index">05</span>
+          <div class="service-icon-badge"><i class="fa-solid fa-hotel"></i></div>
+          <span class="service-tag">Hospitality</span>
           <h4 class="fw-bold mb-3">Hospitality & Tourism Content</h4>
-          <p class="text-secondary small">Cinematic hotel walkthroughs, gourmet culinary video shoots, and lifestyle photography for resort brands.</p>
+          <p class="text-secondary small mb-0">Cinematic hotel walkthroughs, gourmet culinary video shoots, and lifestyle photography built for resort and travel brands.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
-        <div class="custom-card">
-          <div class="text-danger fs-1 mb-3"><i class="fa-solid fa-microphone-lines"></i></div>
+        <div class="service-card">
+          <span class="service-index">06</span>
+          <div class="service-icon-badge"><i class="fa-solid fa-microphone-lines"></i></div>
+          <span class="service-tag">Audio</span>
           <h4 class="fw-bold mb-3">Sound & Podcast Studio</h4>
-          <p class="text-secondary small">Acoustically tuned sound stages for podcasts, voiceovers, radio jingles, and broadcast audio mixing.</p>
+          <p class="text-secondary small mb-0">Acoustically tuned sound stages for podcasts, voiceovers, radio jingles, and full broadcast-grade audio mixing.</p>
         </div>
       </div>
     </div>
@@ -338,11 +381,20 @@
       <p class="text-secondary">Selected campaigns produced for market leaders.</p>
     </div>
 
+    <div class="filter-bar mb-5">
+      <button type="button" class="filter-btn active" data-filter="all">All Work</button>
+      <button type="button" class="filter-btn" data-filter="experiential">Experiential</button>
+      <button type="button" class="filter-btn" data-filter="film-tv">Film & TV</button>
+      <button type="button" class="filter-btn" data-filter="corporate">Corporate</button>
+      <button type="button" class="filter-btn" data-filter="hospitality">Hospitality</button>
+    </div>
+
     <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 portfolio-item" data-category="experiential">
         <div class="custom-card">
           <div class="card-img-wrapper mb-3">
             <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?q=80&w=800&auto=format&fit=crop" alt="Netflix African Original Launch">
+            <div class="portfolio-overlay"><span class="portfolio-view-btn"><i class="fa-solid fa-eye"></i></span></div>
           </div>
           <span class="brand-badge mb-2 d-inline-block">Netflix</span>
           <h5 class="fw-bold">African Original Premiere</h5>
@@ -350,10 +402,11 @@
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 portfolio-item" data-category="film-tv">
         <div class="custom-card">
           <div class="card-img-wrapper mb-3">
             <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=800&auto=format&fit=crop" alt="Citizen TV Studio Design">
+            <div class="portfolio-overlay"><span class="portfolio-view-btn"><i class="fa-solid fa-eye"></i></span></div>
           </div>
           <span class="brand-badge mb-2 d-inline-block">Citizen TV</span>
           <h5 class="fw-bold">Prime Time Broadcast Production</h5>
@@ -361,10 +414,11 @@
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 portfolio-item" data-category="film-tv">
         <div class="custom-card">
           <div class="card-img-wrapper mb-3">
             <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop" alt="Showmax Drama Series">
+            <div class="portfolio-overlay"><span class="portfolio-view-btn"><i class="fa-solid fa-eye"></i></span></div>
           </div>
           <span class="brand-badge mb-2 d-inline-block">Showmax</span>
           <h5 class="fw-bold">Drama Series Commercial Trailer</h5>
@@ -372,10 +426,11 @@
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 portfolio-item" data-category="experiential">
         <div class="custom-card">
           <div class="card-img-wrapper mb-3">
             <img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?q=80&w=800&auto=format&fit=crop" alt="BIC Biro Campus Activation">
+            <div class="portfolio-overlay"><span class="portfolio-view-btn"><i class="fa-solid fa-eye"></i></span></div>
           </div>
           <span class="brand-badge mb-2 d-inline-block">BIC Biro Pens</span>
           <h5 class="fw-bold">National Campus Tour Activation</h5>
@@ -383,10 +438,11 @@
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 portfolio-item" data-category="hospitality">
         <div class="custom-card">
           <div class="card-img-wrapper mb-3">
             <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&auto=format&fit=crop" alt="Grand Hotel Launch">
+            <div class="portfolio-overlay"><span class="portfolio-view-btn"><i class="fa-solid fa-eye"></i></span></div>
           </div>
           <span class="brand-badge mb-2 d-inline-block">Serena & Luxury Hotels</span>
           <h5 class="fw-bold">Resort & Culinary Showcase</h5>
@@ -394,10 +450,11 @@
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 portfolio-item" data-category="corporate">
         <div class="custom-card">
           <div class="card-img-wrapper mb-3">
             <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=800&auto=format&fit=crop" alt="Laptop Brand Launch">
+            <div class="portfolio-overlay"><span class="portfolio-view-btn"><i class="fa-solid fa-eye"></i></span></div>
           </div>
           <span class="brand-badge mb-2 d-inline-block">Pro Laptop Series</span>
           <h5 class="fw-bold">Next-Gen Laptop Launch Expo</h5>
@@ -649,6 +706,15 @@
       alert('Thank you for contacting Red Giant Media Agency! Our team will reach out within 2 hours.');
       event.target.reset();
     }
+
+    // Deep-link support (e.g. events.html links to index.html#contact)
+    document.addEventListener('DOMContentLoaded', function () {
+      const validPages = ['home', 'about', 'services', 'portfolio', 'clients', 'contact'];
+      const hash = window.location.hash.replace('#', '');
+      if (validPages.includes(hash)) {
+        navigateTo(hash);
+      }
+    });
   </script>
 
   <!-- Hero Enhancements (rotating headline word) -->

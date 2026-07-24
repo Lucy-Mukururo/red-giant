@@ -29,4 +29,4 @@ There are no build, lint, or test commands — this is a static site with no `pa
 ## Conventions to follow when editing
 
 - New "pages" should follow the existing pattern: a `<section id="page-X" class="page-content container py-5">`, a matching `<li>` nav item with `id="nav-X"` calling `onclick="navigateTo('X')"`, and content built from Bootstrap grid + the `.custom-card` / `.brand-badge` component classes already defined in `style.css`.
-- The brand carousel (`#brandCarousel`) inside the Home page hero and the static client ticker below it both list the same set of client logos (Netflix, Citizen TV, BIC, Serena Hotels, Showmax, Tech Laptops) — keep both in sync if adding/removing a client.
+- The brand carousel (`#brandCarousel`) inside the Home page hero and the static client ticker below it both list the same set of client logos (Netflix, Citizen TV, BIC, Serena Hotels, Showmax, Tech Laptops, Java House, Safaricom) — keep both in sync if adding/removing a client.
